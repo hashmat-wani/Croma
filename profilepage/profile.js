@@ -1,6 +1,13 @@
 
 
-var userarr=[];
+//var userarr=[];
+var userarr=JSON.parse(localStorage.getItem("userprofiledata"))
+if(userarr==null){
+    userarr=[]
+}
+else{
+    var userarr=JSON.parse(localStorage.getItem("userprofiledata"))  
+}
 document.querySelector(".btn2").addEventListener("click" ,userpro)
 function userpro(event){
     event.preventDefault()
@@ -30,7 +37,7 @@ userarr.push(a1);
 console.log(userarr);
 
 
-
+localStorage.setItem("userprofiledata",JSON.stringify(userarr));
 // window.location.href="ch.html"
 };
 
