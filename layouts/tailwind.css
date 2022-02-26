@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+#container {
+    display: none;
+}
+
+#cart-nonempty {
+    display: block;
+}
+
+#img-products {
+    width: 108px;
+    height: 108px;
+}
+
+#remaining-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#address-filling {
+    /* border: 2px solid red; */
+    width: 600px;
+    /* display: flex; */
+    height: 500px;
+    overflow: scroll;
+    border-radius: 2px;
+    padding: 4px;
+    margin-top: 8px;
+    /* backdrop-filter: blur(10px); */
+}
+
+#idv {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
