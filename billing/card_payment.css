@@ -1,0 +1,130 @@
+        body {
+            background-color: black;
+            /* color: white; */
+            /* margin: 0px; */
+        }
+        
+        .brandlogo-container {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(7, 1fr);
+            justify-content: flex-start;
+            height: 76px;
+            background-color: white;
+            width: 100%;
+        }
+        
+        .brandlogo-container>img {
+            margin: 20px auto 20px 30px;
+        }
+        
+        .brandlogo-container>h3 {
+            margin-left: 0px;
+        }
+        
+        .paycenter-title {
+            height: 25px;
+            margin-left: 10px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        .text {
+            height: max-content;
+            width: max-content;
+            font-style: italic;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 20px;
+            color: #666;
+        }
+        
+        .securePayment {
+            display: flex;
+        }
+        
+        .securePayment img {
+            width: 50px;
+            height: 50px;
+            border-left: 1px solid #666;
+            margin-left: -50px;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        
+        .securePayment>p {
+            margin-top: 25px;
+            margin-left: 10px;
+            color: #666;
+            font-size: 19px;
+        }
+        /* //////////////////////////////// */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 17px;
+        }
+        
+        .container {
+            margin: auto;
+            width: 60%;
+            background-color: black;
+            padding: 5px 20px 15px 20px;
+            border: 1px, solid lightgrey;
+            border-radius: 4px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 17px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        
+        fieldset {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 1px solid #ccc;
+        }
+        
+        .main_heading {
+            text-align: center;
+        }
+        
+        input[type="button"] {
+            background-color: #00967b;
+            padding: 12px;
+            font-size: large;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            font-weight: bolder;
+        }
+        
+        input[type="button"]:hover {
+            background-color: #00967f;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        p {
+            margin-left: 10px;
+        }

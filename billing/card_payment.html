@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-www.banggood.com</title>
+    <!-- <link rel="shortcut icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="card_payment.css">
+    <link rel="stylesheet" href="../nav/navstyle.css">
+    <script src="https://kit.fontawesome.com/7213b39e3a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- <div class="brandlogo-container">
+        <img src="sprite (1).png" alt="" class="brandlogo-image">
+        <div class="paycenter-title">
+            <p class="text">Online <br>Payment</p>
+        </div>
+        <div class="securePayment">
+            <img src="icons8-security-shield-green-24.png" alt="" srcset="">
+            <p>Secure Payment</p>
+        </div>
+    </div> -->
+    <nav></nav>
+
+
+
+    <div class="container">
+        <form action="">
+
+            <!-- <legend>
+                <h1 class="main_heading">Payment Form</h1>
+
+            </legend>
+            <hr>
+            <h2>Contact Information</h2>
+
+
+            <p>Name: <input type="text" name="name" required placeholder="Your Name"></p>
+
+            <fieldset>
+                <legend>Gender</legend>
+
+                <p>
+                    Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="30" rows="10"></textarea required></p>
+        <p>Email: <input type="email" name="email" id="email"required placeholder="email@gmail.com"></p>
+        <p>Pincode: <input type="number" name="number" id="number"required placeholder="248001"></p> -->
+
+            <legend>
+                <h2 style="color: white;">Payment Information</h2>
+            </legend>
+            <hr>
+            <p style="color: white;">
+                Card Type: <select name="card_type" id="card_type" required onchange="cardType()">
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="upi">UPI</option>
+                <option value="payal">PayPal</option>
+            </select>
+
+            </p>
+            <p style="color: white;">Card Number: <input type="number" name="card_number" id="card_number" required placeholder="123 456 789 101"></p>
+            <p style="color: white;">Expiration Date: <input type="date" name="exp_date" id="exp_date" required dd-mm-yyyy></p>
+            <p style="color: white;">CVV <input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+            <input type="button" value="Pay Now" onclick="pay()">
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+<script src="card_payment.js" defer></script>
