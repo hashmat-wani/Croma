@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="../nav/navstyle.css">
+    <link rel="stylesheet" href="../login&signup/login.css">
+
+    <!-- navbar scripts -->
+    <script src="https://kit.fontawesome.com/7213b39e3a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+    <!-- navbar scripts ends her -->
+</head>
+
+<body class="bg-[#121212]">
+    <nav></nav>
+    <div class="loginc"></div>
+    <!-- When items will be present in your cart then you have to hide "CONTAINER" id  -->
+    <!--  Text Section  Here-->
+    <div id="container" class="bg-[#121212] flex flex-col">
+        <div id="empty-container" class="text-white text-center text-2xl mt-2 font-normal leading-6">
+            Your Cart is empty
+        </div>
+        <div id="empty-container-1" class="text-white text-center text-[16px]">
+            Looks like you havent made your choice yet
+        </div>
+
+        <!-- Image Of Cart -->
+        <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg/Croma%20Assets/UI%20Assets//empty-cart.svg/mxw_1284,f_auto" class="w-[210px] h-[145px] self-center mt-10 ">
+
+        <!-- 'Explore Now' anchor button -->
+        <!--  -->
+        <div class="text-[#00c09e] non-italic leading-4 cursor-pointer mb-40 font-bold text-[13px] underline mt-10 self-center"> EXPLORE NOW</div>
+    </div>
+
+
+    <!-- footer section starts here  width ID = "Footer-section"-->
+    <div id="Footer-section" class="bg-[#121212]" style="display: none;">
+        <img src="../footer - Brave 2_25_2022 5_26_21 PM.png" alt="" class="mt-3 w-full">
+    </div>
+
+
+
+
+    <!-- when there are items in the cart container then the page which starts apearing will starts from here -->
+    <!-- Cart-nonempty -->
+    <div id="cart-nonempty">
+        <!-- Displaying total items in the cart along with sum of total price -->
+        <div id="cart-length " class=" text-[22px] flex flex-row justify-center w-[95%] border border-[#353535] p-8 rounded-md m-auto mt-4">
+            <div class="text-white text-3xl w-max align-middle font-light">Your cart</div>
+            <div class="text-white ml-3 font-bold text-m" id="no_of_Items">( 3 items )</div>
+
+
+            <!-- This DIV shows the amount of the total price of the Items -->
+            <div id="amountOfItems" class="text-white ml-9 font-bold"> ₹ 146,890.00</div>
+
+
+            <!-- this is the checkout button with id = "checkout" -->
+            <div id="checkout2" class="bg-[#00e9bf] hover:bg-[#00967b] px-10 py-3 rounded-md text-xs font-semibold cursor-pointer text-center ml-14 ">CHECKOUT</div>
+        </div>
+
+
+
+        <!-- here starts the grid container to show the items of the cart data with id = "grid-container" -->
+        <div id="grid-container1" class="flex w-[95%] m-auto">
+            <!--  -->
+            <!-- paste your apple wala  item here -->
+            <div id="index_0" class="w-[70%] flex-6"></div>
+
+            <!-- Delivery options for the postal zip code -->
+            <div id="delivery-zipcode" class="rounded mt-4 ml-3 flex-4 w-[30%] flex flex-col justify-between">
+
+                <div class="border border-[#353535] rounded-md">
+
+                    <div class="text-white text-center font-normal tracking-tight text-xl p-5  rounded-md">Delivery Option for <span class="text-[#00e9bf] font-bold cursor-pointer">800001</span> <span class="text-[#00e9bf] underline text-sm cursor-pointer ">Change</span>
+                    </div>
+
+
+                    <div class="ml-8 flex flex-row mb-5">
+
+                        <input type="checkbox" checked="checked">
+
+                        <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828519/Croma%20Assets/UI%20Assets/Standard-Delivery-Black-Theme.svg/mxw_1284,f_auto" class="ml-3 w-[30px] h-[28px] -mt-1 ">
+
+                        <div class="text-white ml-4 text-lg font-bold -mt-1">
+                            Standard Delivery
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="text-white text-center font-normal tracking-tight text-xl border border-[#353535] flex flex-row rounded-md p-1">
+
+                    <input type="number" placeholder="Enter coupon code" class="p-3 rounded-tl-md rounded-bl-md h-[60%] align-middle mt-3 ml-8 text-base">
+                    <div class="bg-white text-black h-[60%] text-sm mt-3 px-4 py-2 rounded-br-md rounded-tr-md cursor-pointer font-semibold">Apply</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Here we are showing the Payment Details -->
+        <!-- and the ID of the container is "payment-details" -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- here starts the grid container to show the items of the cart data with id = "grid-container" -->
+        <div id="grid-container2" class="flex w-[95%] m-auto">
+            <div id="index_1" class="w-[70%] flex-6"></div>
+
+
+            <!-- payment options with all the remaining details -->
+            <div id="payment-options" class="rounded mt-4 ml-3 flex-4 w-[30%] flex flex-col justify-between border border-[#353535]">
+
+
+                <div class="text-white font-normal text-2xl align-left mt-4 ml-4">Payment Details</div>
+
+                <!-- item total -->
+                <!-- Pricing tag need  to be updated -->
+                <div id="item-total" class="flex flex-row justify-between">
+                    <div class="text-white ml-4">Item total</div>
+                    <div class="text-white mr-6" id="showoffprice1">₹147,399.00</div>
+                </div>
+
+                <!-- Delivery cost at the exact pin code -->
+                <div class="flex flex-row justify-between  border-b border-[#353535]">
+                    <div class="text-white ml-4">Delivery cost at <span class="text-[#00967f] font-bold">800001</span></div>
+                    <div class="text-white font-bold text-base mr-6 mb-2">Free</div>
+                </div>
+
+                <!-- Total price calculation -->
+
+                <div class="flex flex-row justify-between">
+                    <div class="text-white font-bold ml-4">Total Price</div>
+                    <div class="text-white font-bold mr-6 mb-4" id="showoffprice2">₹147,399.00</div>
+                </div>
+
+                <!-- Is this a gift Item -->
+                <div class="flex flex-row justify-start">
+                    <input type="checkbox" class="ml-4 w-[20px] h-[20px]">
+                    <div><i class="fa fa-gift ml-3" style="font-size: 22px;color:white;"></i></div>
+                    <div class="text-sm text-white ml-3">Is this a gift item?</div>
+                </div>
+
+                <!-- Towards Donation for the underpriviliged -->
+                <div class="flex flex-row justify-start">
+                    <input type="checkbox" class="ml-4 w-[22px] h-[22px] ">
+                    <div class="text-sm text-white ml-3">Towards Donation for the underpriviliged</div>
+                    <div class="p-3 bg-[#00e9bf] rounded-md mr-1 hover:bg-[#00967b] cursor-pointer text-xs font-bold" id="checkout1">CHECKOUT</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- Another Grid Container -->
+    <!-- Data will be be  displayed through Here with the Help of mapping using JavaScript -->
+    <!-- this is virtual DIV container -->
+    <div id="remaining-container" class="flex w-[70%]"></div>
+
+
+
+
+
+    <!--  -->
+    <!-- Here is the section for the address filling-page -->
+    <!--  -->
+    <div id="address-filling" class="flex flex-col m-auto  bg-[#353535]"><span class="text-white font-sm cursor-pointer hover:text-[#00e9bf]" id="Close-address">close</span>
+
+        <div class="text-white w-max text-3xl mt-3 ml-36">Add Address</div>
+        <!--  -->
+        <!-- 
+            getting first Name, Mobile Number
+         -->
+        <!--  -->
+        <div class="flex flex-row  mt-3">
+            <h3 class="text-white text-base ml-14">First name*</h3>
+            <h3 class="text-white text-base ml-36">Mobile Number*</h3>
+        </div>
+        <div class="flex flex-row mt-1 ml-7">
+            <input type="text" class="p-3 rounded-md ml-7" placeholder="Enter full Name" id="fn">
+            <input type="number" placeholder="Enter mobile number" class="p-3 rounded-md ml-9" id="mb">
+        </div>
+
+
+        <!-- another section  -->
+        <!--  address nick-name -->
+        <div class="flex flex-row mt-4">
+            <h3 class="text-white text-base ml-14">Address Nick name**</h3>
+            <h3 class="text-white text-base ml-[72px]">Pin Code*</h3>
+        </div>
+        <div class="flex flex-row mt-1 ml-7">
+            <input type="text" class="p-3 rounded-md ml-7 " placeholder="Enter nickname" id="adnm">
+            <input type="number" placeholder="Pincode" class="p-3 rounded-md ml-9" id="pin">
+        </div>
+
+
+        <!-- adding address and giving two input boxes for it
+         -->
+
+        <div class="flex flex-row mt-4">
+            <h3 class="text-white text-base ml-14">Address*</h3>
+        </div>
+        <div class="flex flex-col mt-1 ml-7">
+            <input type="text" class="p-3 rounded-md mt-1 ml-7 w-[425px]" placeholder="Flat No./Building/Society" id="adr1">
+            <input type="text" placeholder="Landmark/Locality/Area" class="p-3 rounded-md mt-2 ml-7 w-[425px]" id="adr2">
+        </div>
+
+
+
+        <!-- addding another section for entering state and city -->
+        <div class="flex flex-row mt-4">
+            <h3 class="text-white text-base ml-[60px]">State*</h3>
+            <h3 class="text-white text-base ml-[180px]">City*</h3>
+        </div>
+        <div class="flex flex-row mt-1 ml-7">
+            <input type="text" class="p-3 rounded-md ml-7" placeholder="State" id="state">
+            <input type="text" placeholder="City" class="p-3 rounded-md ml-9" id="city">
+        </div>
+
+
+
+        <!-- what is the address type  of the customer -->
+        <div class="text-white text-base ml-14 mt-2">Address Type</div>
+        <div class="flex flex-row">
+            <div class="ml-14 ">
+                <input type="checkbox" class="w-4 h-4">
+                <span class="text-white text-sm ml-2">Home</span>
+            </div>
+            <div class="ml-14 ">
+                <input type="checkbox" id="" class="w-4 h-4">
+                <span class="text-white text-sm ml-2">Work</span>
+            </div>
+            <div class="ml-14 ">
+                <input type="checkbox" id="" class="w-4 h-4">
+                <span class="text-white text-sm ml-2">Other</span>
+            </div>
+        </div>
+
+        <!-- Save this address as Default -->
+
+        <div class="text-white font-base text-lg mt-4 font-normal ml-14">
+            <input type="checkbox" id="" class="w-5 h-5 mr-4 mt-1">Save This Address As Default</div>
+
+
+
+        <div class="bg-[#00e9bf] w-max p-2 font-semibold rounded-md mt-4 m-auto text-xs cursor-pointer mb-3" id="save-address">SAVE ADDRESS</div>
+
+
+    </div>
+
+
+    <!-- footer wala part Hai ji  -->
+    <div id="footerHaiJi">
+        <img src="../footer - Brave 2_25_2022 5_26_21 PM.png" alt="" class="mt-3 w-full">
+    </div>
+
+</body>
+
+</html>
+<script src="./index.js" type="module"></script>
