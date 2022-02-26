@@ -77,20 +77,22 @@ input{
 .checkboxcont{
   height: 20px;
   width: 99%;
-  /* border: 1px solid red; */
+   /* border: 1px solid red;  */
   display: grid;
   grid-template-columns: 20% 17% 28% 23%;
   gap: 20px;
+  
 
 }
 
 .checkboxdivs{
-/* border: 2px solid green; */
+ /* border: 2px solid green;  */
 display: flex;
 flex-direction: row;
 align-items: flex-end;
-
-
+}
+.checkboxcont>div:nth-child(1)>input{
+   margin-left: -41px;
 }
 
 .checkboxdivs>input{

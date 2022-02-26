@@ -42,5 +42,5 @@ localStorage.setItem("userprofiledata",JSON.stringify(userarr));
 };
 
 // document.querySelector(".btn2").addEventListener("click" ,function(){
-//     window.location.href="ch.html"
+//     window.location.href="electronics.html"
 // })
