@@ -1,0 +1,458 @@
+body {
+  background-color: rgb(18, 18, 18);
+}
+.cr {
+  width: 100%;
+  height: 50px;
+}
+.cr > p {
+  color: white;
+  margin-left: 150px;
+}
+.container {
+  display: flex;
+}
+.side-bar {
+  width: 250px;
+  margin-left: 100px;
+  border-right: 0.1px solid grey;
+}
+h3 {
+  color: white;
+  font-family: sans-serif;
+  top: 50px;
+  font-size: 15px;
+}
+.col {
+  border: 1px solid white;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 2%;
+  background-color: rgb(18, 18, 18);
+}
+#search {
+  border: 1px solid white;
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  margin-top: -5px;
+  font-size: 20px;
+  background-color: rgb(18, 18, 18);
+}
+span {
+  color: white;
+  font-size: 18px;
+  text-align: unset;
+  margin-left: 10px;
+}
+a {
+  color: rgb(11, 156, 117);
+}
+#id1 {
+  display: flex;
+}
+#p2 {
+  margin-left: 20px;
+}
+#btn3 {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border: 0.1px solid gray;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+#id2 {
+  width: 600px;
+  height: 50px;
+  border: 0.1px solid grey;
+  display: flex;
+}
+#id2 > h4 {
+  margin-left: 10px;
+}
+#id3 {
+  display: flex;
+  margin-left: 0px;
+  width: 600px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+#id3 > #btn {
+  background-color: rgb(11, 156, 117);
+  padding: 1%;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+#id3 > #btn1 {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 150px;
+  font-weight: bold;
+  border: 1px solid white;
+}
+#letter {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+#opt {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#opt > p {
+  margin-right: 10px;
+}
+
+.main {
+  margin-right: 80px;
+  margin-left: 10px;
+}
+.slider {
+  height: 300px;
+  width: 100%;
+}
+#slideimage {
+  height: 100%;
+  width: 100%;
+}
+.items {
+  width: 100%;
+}
+#flex {
+  display: flex;
+  border-bottom: 0.5px solid grey;
+}
+#d1 {
+  flex: 3;
+}
+
+#d2 {
+  margin-left: 10px;
+
+  flex: 7;
+}
+#images {
+  width: 100%;
+  height: 90%;
+  padding: 2%;
+}
+h2 {
+  color: white;
+  font-family: sans-serif;
+}
+#id {
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#check {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #121212;
+}
+#textbox {
+  background-color: #121212;
+}
+#textbox > p {
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.boldtext {
+  font-size: 15.5px;
+  font-weight: bold;
+}
+#underlinetext1 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext1:hover {
+  cursor: pointer;
+}
+#underlinetext2 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext2:hover {
+  cursor: pointer;
+}
+#underlinetext3 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext3:hover {
+  cursor: pointer;
+}
+#underlinetext4 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext4:hover {
+  cursor: pointer;
+}
+#underlinetext5 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext5:hover {
+  cursor: pointer;
+}
+#underlinetext6 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext6:hover {
+  cursor: pointer;
+}
+#underlinetext7 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext7:hover {
+  cursor: pointer;
+}
+#underlinetext8 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext8:hover {
+  cursor: pointer;
+}
+#underlinetext9 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext9:hover {
+  cursor: pointer;
+}
+#underlinetext10 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext10:hover {
+  cursor: pointer;
+}
+#underlinetext11 {
+  color: teal;
+  text-decoration: underline;
+}
+#underlinetext11:hover {
+  cursor: pointer;
+}
+#footerbox {
+  width: 100%;
+  height: 400px;
+
+  background-color: #1d1d1d;
+  display: grid;
+  grid-template-columns: 35% 15% 15% 13% 22%;
+}
+.footerbox1 {
+  border-right: 1px solid white;
+  height: 300px;
+  color: white;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.footerbox2 {
+  border-left: 1px solid white;
+  height: 300px;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.footerbox3 {
+  border-right: 1px solid white;
+  height: 300px;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+.footerbox4 {
+  border-left: 1px solid white;
+  height: 300px;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.footerbox5 {
+  height: 300px;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+.footerheading {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: white;
+}
+#footersearchbox {
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: 0;
+  margin-top: -10px;
+  font-size: 17px;
+}
+#blackiconbox {
+  margin-top: 15px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+#blackicon1:hover {
+  cursor: pointer;
+  color: rgb(76, 76, 170);
+}
+#blackicon2:hover {
+  cursor: pointer;
+  color: rgb(76, 76, 170);
+}
+#blackicon3:hover {
+  cursor: pointer;
+  color: red;
+}
+#blackicon4:hover {
+  cursor: pointer;
+  color: rgb(233, 188, 106);
+}
+#blackicon5:hover {
+  cursor: pointer;
+  color: red;
+}
+#footerlastline {
+  margin-top: 50px;
+  font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+#footerlastline2 {
+  margin-top: -10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.footerwidetext {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-top: 18px;
+}
+.footerwidetext:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerbox3heading {
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+#footerbox3heading:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerbox5heading {
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+#footerbox5heading:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext1,
+#footerwidetext2,
+#footerwidetext3,
+#footerwidetext4,
+#footerwidetext5,
+#footerwidetext6,
+#footerwidetext7 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-top: 18px;
+}
+#footerwidetext1:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext2:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext3:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext4:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext5:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext6:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footerwidetext7:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footer5widetext1,
+#footer5widetext2,
+#footer5widetext3,
+#footer5widetext4,
+#footer5widetext5 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-top: 18px;
+}
+#footer5widetext1:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footer5widetext2:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footer5widetext3:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footer5widetext4:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}
+#footer5widetext5:hover {
+  cursor: pointer;
+  color: rgb(71, 207, 162);
+}

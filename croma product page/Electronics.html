@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Electronics.css" />
+    <link rel="stylesheet" href="../login&signup/login.css">
+    <!--  -->
+
+
+    <script src="https://kit.fontawesome.com/7213b39e3a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+
+    <!--  -->
+    <script src="Electronics.js" defer type="module"></script>
+    <link rel="stylesheet" href="../nav/navstyle.css">
+    <script src="https://kit.fontawesome.com/ea5e711088.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Here starts  the navbar sectuon  -->
+    <nav></nav>
+    <div class="loginc"></div>
+
+    </div>
+
+    <!-- here ends the navbar section  -->
+    <!--  -->
+    <!--  -->
+    <div class="cr">
+        <p>Croma ➤ <strong>Televisions & Accessories</strong></p>
+    </div>
+    <div class="container">
+        <div class="side-bar">
+            <h3>SORT BY</h3>
+            <select id="pricesort" onchange="handlePricesort()" class="col">
+            <option value="">FEATURED</option>
+            <option value="asc">LATEST ARRIVAL</option>
+            <option value="high">HIGH TO LOW</option>
+            <option value="low">LOW TO HIGH</option>
+            <option value="new">TOP RATE</option>
+          </select>
+            <h3 id="h3">FILTER BY</h3>
+            <select id="brandfilter" onchange="filterCat()" class="col">
+            <option value="" onclick="window.location.reload()">SELECT BRAND</option>
+            <option value="Nokia">NOKIA</option>
+            <option value="Vivo">VIVO</option>
+            <option value="OnePlus">OnePlus</option>
+            <option value="Croma">CROMA</option>
+            <option value="Samsung">SAMSUNG</option>
+            <option value="Asus">ASUS</option>
+            <option value="Dell">DELL</option>
+            <option value="Microsoft">MICROSOFT</option>
+          </select>
+
+
+
+
+            <br>
+            <h5 style="color: white; margin-top: 10px;">___________________________</h5>
+            <h3>CATEGORY</h3>
+            <input type="text" value="SEARCH" id="search">
+            <br>
+            <br>
+            <input type="checkbox" id="check"><span>Smart TVs (138)</span>
+            <br>
+            <input type="checkbox" id="check"><span>4K Ultra HD TVs (108)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Large Screen TVs (67)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Android Smart TVs (65)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Medium Screen TVs (5)</span>
+            <br>
+            <br>
+            <br>
+            <a href="">SEE MORE+</a>
+            <br>
+            <br>
+            <h3>PRICE</h3>
+            <input type="text" value="SEARCH" id="search">
+            <br>
+            <br>
+            <input type="checkbox" id="check"><span>500 & Below (1)</span>
+            <br>
+            <input type="checkbox" id="check"><span>501 - 1,000 (1)</span>
+            <br>
+            <input type="checkbox" id="check"><span>1,001 - 1,500 (2)</span>
+            <br>
+            <input type="checkbox" id="check"><span>1,501 - 3,000 (10)</span>
+            <br>
+            <input type="checkbox" id="check"><span>3,001 - 5,000 (5)</span>
+            <br>
+            <br>
+            <br>
+            <a href="">SEE MORE+</a>
+            <br>
+            <br>
+            <h3>BRAND</h3>
+            <input type="text" value="SEARCH" id="search">
+            <br>
+            <br>
+            <input type="checkbox" id="check"><span>ANKER (2)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Acer (2)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Airtel (3)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Akai (10)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Amazon (7)</span>
+            <br>
+            <br>
+            <br>
+            <a href="">SEE MORE+</a>
+            <br>
+            <br>
+            <h3>COUNTRY OF MANUFACTURE</h3>
+            <input type="text" value="SEARCH" id="search">
+            <br>
+            <br>
+            <input type="checkbox" id="check"><span>India (164)</span>
+            <br>
+            <input type="checkbox" id="check"><span>China (35)</span>
+            <br>
+            <input type="checkbox" id="check"><span>India (3)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Korea (3)</span>
+            <br>
+            <input type="checkbox" id="check"><span>Thailand (3)</span>
+            <br>
+            <br>
+            <br>
+            <a href="">SEE MORE+</a>
+            <div id="opt">
+                <h3>DISPLAY SIZE</h3>
+                <p>▼</p>
+            </div>
+            <br>
+
+            <div id="opt">
+                <h3>COUNTRY OF ORIGIN</h3>
+                <p>▼</p>
+            </div>
+            <br>
+            <div id="opt">
+                <h3>TELIVISON FORMAT</h3>
+                <p>▼</p>
+            </div>
+            <br>
+            <div id="opt">
+                <h3>TELEVISION FEATURED</h3>
+                <p>▼</p>
+            </div>
+            <br>
+            <div id="opt">
+                <h3>DIVICE TYPE</h3>
+                <p>▼</p>
+            </div>
+            <br>
+            <div id="opt">
+                <h3>PROJECTOR TYPE</h3>
+                <p>▼</p>
+            </div>
+            <br>
+            <div id="opt">
+                <h3>PRODUCT TYPE</h3>
+                <p>▼</p>
+            </div>
+            <br>
+            <div id="opt">
+                <h3>RESOLUTION</h3>
+                <p>▼</p>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="slider">
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645682862/Croma%20Assets/CMS/Category%20Page%20Banners/Televisions%20and%20Accessories/C997/CP_OnePlus-TV_24Feb2022_rtminq.jpg/mxw_2048,f_auto"
+                    id="slideimage" class="flex">
+            </div>
+            <div id="letter">
+                <p>Televisions & Accessories</p>
+                <p>Product Found 230</p>
+            </div>
+
+            <div class="items">
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div id="textbox">
+        <p>Launched in 2006, first one-of-its kind large format specialist retail electronics store, Croma, caters to over 12 Million happy customers for all of their multi-brand digital gadgets and home electronics. Since its inception, Croma has become
+            synonymous for all electronics needs, both online & in-store, with a wide product range and tech-savvy staff with a will to help customers throughout their buying journeys.</p>
+        <p>With a promise of a <span class="boldtext">‘#Brighter Every Day’</span>to its customers, Croma offers a world-class ambience and seamless ‘omni-channel’ shopping experience to enjoy the best of both, the online shopping & the offline worlds. By
+            availing Croma’s omni-channel services, as a customer, one can enjoy online shopping and have the product delivered at their doorstep or can avail the pick-up from a <span class="boldtext">Croma store</span> near me service. Customers can
+            also opt for <span class="boldtext">Zip Express</span> delivery service that makes sure to deliver the product at their doorstep within 3 hours in select cities.</p>
+        <p>With over <span class="boldtext">200 brands</span> and <span class="boldtext">190+ stores</span> across <span class="boldtext">40+ major cities of India</span>, Croma ensures fulfilling electronic needs of each customer, and that there is something
+            for everyone.</p>
+        <p>Whether you're setting up a new home or simply looking for an upgrade, Croma offers an eclectic range of electronics to suit your needs. Browse through an array of Home & Kitchen Appliances such as <span id="underlinetext1">Air Conditioners</span>,
+            <span id="underlinetext2">Refrigerators</span>, <span id="underlinetext3">Washing Machines</span>, Vacuum Cleaners, Microwave, Air Fryers, Soup Makers, Cooktops, Dishwashers, <span id="underlinetext4">Water Heaters</span> and many more such
+            product categories.</p>
+        <p>You can also make upgrading easy with an all-inclusive collection of <span id="underlinetext5">LED TV</span>, <span id="underlinetext6">Speakers</span> & Sound Systems. So, whether you're looking at rekindling your lost hobby with a Digital
+            <span id="underlinetext7">Camera</span>, or hoping to surprise your loved ones with the latest <span id="underlinetext8">Mobile</span>, <span id="underlinetext9">Laptop</span>, or Desktop, Croma is a one-stop shop solution for all your needs.</p>
+        <p>If that's not all, Croma also offers an assortment of various other product categories to simplify your life including Home Safety Security, Wired & Wireless <span id="underlinetext10">Headphones</span>, <span id="underlinetext11">Earphones</span>,
+            Smart Wearable Devices and all kinds of Accessories.</p>
+        <p>With an attempt to become a go-to destination for all electronic goods, Croma has set up a platform called <span class="boldtext">Gadgets of Desire</span> that showcases all the <span class="boldtext">New@Croma</span>, quick-pick & latest technology
+            products. This section is specially curated to match expectations of every innovative gadget lover, tech-savvy customer or for those looking for unique gifting ideas. Gadgets of Desire focuses to satiate every fitness freak, travel lover,
+            in-house DJ or a computer geek. Croma assures your <span class="boldtext">#BrighterTomorrow</span> begins today!</p>
+        <p>To delight customers all along, Croma also launched its own label products in 2008. Brand Croma stands for Life More Beautiful; a promise based not just on the beauty in the way they look, but mainly as a value they offer to a customer’s life.
+            This range is a perfect fit, especially for those who desire a completely feature-packed and quality product in a pocket friendly price range. Additionally, to ensure that customers enjoy their product to the fullest, Croma encourages purchase
+            of <span class="boldtext">Annual Maintenance Plans</span> and <span class="boldtext">Extended Warranty</span> to safeguard their product against mishaps and accidental damages during or beyond brand warranty.</p>
+        <p>Croma also rewards customers with cashbacks and discounts as a part of Privileges Programme to get more for their money and exceptional after sales service. Members in this programme enjoy Loyalty Discounts, Pre-qualified Credit, Exchange & Upgrade
+            Benefits, Assured Lifetime Service and 14 Day Fix/Replace Assurance on select Home Appliances and LEDs. To register, give a missed call on <span class="boldtext">1800-22-6699</span>, and redeem exclusive benefits at the nearest Croma store
+            or on www.croma.com! This programme also includes Gift Card, a solution that gives customers the freedom of choice between physical <span class="boldtext">Gift Cards or e-Gift Vouchers</span> of multiple denominations.</p>
+        <p>Croma offers multiple payment gateways to select preferred payment option. A customer can choose from various payment modes like credit or debit cards, payment wallets and cash-on-delivery. Croma allows its customers to avail <span class="boldtext">Easy EMI options</span>            on credit & debit cards or through available consumer finance options.</p>
+        <p>Croma is a brand of Infiniti Retail Limited, which is a part of the Tata Group.</p>
+    </div>
+    <div id="footerbox">
+        <div class="footerbox1">
+            <p><span class="footerheading">CONNECT WITH US</span></p>
+            <input id="footersearchbox" type="text" placeholder="Enter Email ID">
+            <div id="blackiconbox">
+                <i id="blackicon1" class="fab fa-facebook-f"></i>
+                <i id="blackicon2" class="fab fa-twitter"></i>
+                <i id="blackicon3" class="fab fa-youtube"></i>
+                <i id="blackicon4" class="fab fa-instagram"></i>
+                <i id="blackicon5" class="fab fa-pinterest"></i>
+            </div>
+            <p id="footerlastline">Copyright 2021 Croma. All rights</p>
+            <p id="footerlastline2">reserved</p>
+        </div>
+        <div class="footerbox2">
+            <p><span class="footerheading">USEFUL LINKS</span></p>
+            <P class="footerwidetext">About Croma</P>
+            <P class="footerwidetext">Help And Support</P>
+            <P class="footerwidetext">FAQs</P>
+            <P class="footerwidetext">Return Policy</P>
+            <P class="footerwidetext">Bulk Enquiry</P>
+            <P class="footerwidetext">Store Locator</P>
+            <P class="footerwidetext">Delightful Programmes</P>
+        </div>
+        <div class="footerbox3">
+            <p id="footerbox3heading">E-Care</p>
+            <P class="footerwidetext">Franchise Oppurtunity</P>
+            <P class="footerwidetext">Site Map</P>
+            <P class="footerwidetext">Careers At Chroma</P>
+            <P class="footerwidetext">Terms Of Use</P>
+            <P class="footerwidetext">Disclimer</P>
+            <P class="footerwidetext">Privacy Policy</P>
+        </div>
+        <div class="footerbox4">
+            <p><span class="footerheading">PRODUCTS</span></p>
+            <P id="footerwidetext1">Telivisions & Accessories</P>
+            <P id="footerwidetext2">Home Appliances</P>
+            <P id="footerwidetext3">Phones & Wearables</P>
+            <P id="footerwidetext4">Computers & Tablets</P>
+            <P id="footerwidetext5">Kitchen Appliances</P>
+            <P id="footerwidetext6">Audio & Vedio</P>
+            <P id="footerwidetext7">Health & Fitness</P>
+        </div>
+        <div class="footerbox5">
+            <p id="footerbox5heading">Grooming & Personal Care</p>
+            <P id="footer5widetext1">Cameras & Accessories</P>
+            <P id="footer5widetext2">Smart Devices</P>
+            <P id="footer5widetext3">Gaming</P>
+            <P id="footer5widetext4">Accessories</P>
+            <P id="footer5widetext5">Top Brands</P>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="electronicData.js" type="module"></script>
