@@ -1,7 +1,7 @@
 //importing starts here
 
 import nav from "../nav/nav.js";
-import logindata from "../login&signup/login.js"
+import logindata from "../login_signup/login.js"
 
 
 // importing ends here
@@ -38,9 +38,20 @@ let user = document.querySelector(".user");
 
 // updating item for the container  in the navigation bar
 
-var data = JSON.parse(localStorage.getItem("cartarr"));
+var data = JSON.parse(localStorage.getItem("cartarr"))||[];
+if(data.length==null){
+    var lengthOfCart =0
+}
+else{
+    lengthOfCart=`${data.length}`
+}
 
-document.querySelector(".cartcount").textContent = `${data.length}`
+
+if(lengthOfCart==null){
+    lengthOfCart=0
+}
+
+document.querySelector(".cartcount").textContent = lengthOfCart
 
 
 
@@ -76,6 +87,11 @@ document.querySelector(".butt").addEventListener("click", function() {
 
 function validate(usd, mo) {
     var a = 0;
+    var y=usd||[]
+    if(y.length==null ||y.length==[]){
+        alert("Invalid details --Please create account")
+    }
+    else{
     for (var i = 0; i < usd.length; i++) {
         console.log("ssd", mo)
         console.log("ss", usd[i].moboleno)
@@ -90,4 +106,5 @@ function validate(usd, mo) {
     } else {
         alert("Invalid details --Please create account")
     }
+}
 }

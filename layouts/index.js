@@ -1,7 +1,7 @@
-import delivery from "../components/deliver_zip.js";
+//import delivery from "../components/deliver_zip.js";
 
 import nav from "../nav/nav.js"
-import logindata from "../login&signup/login.js"
+import logindata from "../login_signup/login.js"
 ////////////////--------------
 /////////////////writing functionality here to display here the data be shown on the page..
 var data = JSON.parse(localStorage.getItem("cartarr"));
@@ -226,11 +226,12 @@ document.getElementById("save-address").addEventListener("click", () => {
     let state = document.getElementById("state").value;
     let city = document.getElementById("city").value;
 
-    if (city == "" || state == "" || adr1 == "" || adr2 == "" || fn == "" || adnm == "" || mb == "" || pin == "") {
-        alert("Enter full details")
-    } else {
-        window.location.href = "billing.html";
-    }
+    // if (city == "" || state == "" || adr1 == "" || adr2 == "" || fn == "" || adnm == "" || mb == "" || pin == "") {
+    //     alert("Enter full details")
+    // } else {
+    //     window.location.href = "../billing/card_paynemt.html";
+    // }
+    window.location.href = "../billing/card_payment.html";
 
 })
 
@@ -268,6 +269,11 @@ document.querySelector(".butt").addEventListener("click", function() {
 
 function validate(usd, mo) {
     var a = 0;
+    var y=usd||[]
+    if(y.length==null ||y.length==[]){
+        alert("Invalid details --Please create account")
+    }
+    else{
     for (var i = 0; i < usd.length; i++) {
         console.log("ssd", mo)
         console.log("ss", usd[i].moboleno)
@@ -282,4 +288,5 @@ function validate(usd, mo) {
     } else {
         alert("Invalid details --Please create account")
     }
+}
 }

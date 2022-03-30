@@ -43,7 +43,7 @@ function userpro(event) {
 
 
     localStorage.setItem("userprofiledata", JSON.stringify(userarr));
-    window.location.href = "../layouts/index.html"
+    window.location.href = "../layouts/cart.html"
 };
 
 // document.querySelector(".btn2").addEventListener("click" ,function(){

@@ -350,7 +350,7 @@ document.querySelector(".cartcount").textContent = cartarr.length;
 
 document.querySelector(".cart").addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = `../layouts/index.html`
+    window.location.href = `../layouts/cart.html`
 })
 
 

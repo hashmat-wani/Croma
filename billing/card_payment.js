@@ -14,7 +14,7 @@ function pay() {
         window.location.href = "card_payment.html"
     } else {
         alert("Payment Done!");
-        location.href = "../body/body.html"
+        location.href = "../index.html"
 
         cartarr = [];
         localStorage.setItem(JSON.stringify(cartarr));

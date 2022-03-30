@@ -1,6 +1,6 @@
 function nav() {
     return `<div class="left">
-    <a class="brand" href="../body/body.html">
+    <a class="brand" href="../index.html">
       <img
         src="https://www.croma.com/assets/images/croma_logo_dark.png"
         alt=""
@@ -692,7 +692,7 @@ function nav() {
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </a>
       <a class="user">SIGN IN</a>
-    <a href="../layouts/index.html"
+    <a href="../layouts/cart.html"
       ><i class="fa-solid fa-cart-shopping"></i>
       <div class="cartcount">0</div>
       <p class="cart">CART</p></a

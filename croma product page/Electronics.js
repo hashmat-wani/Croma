@@ -1,5 +1,5 @@
 import nav from "../nav/nav.js"
-import logindata from "../login&signup/login.js"
+import logindata from "../login_signup/login.js"
 
 function fir() {
     document.getElementById("slideimage").src = "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645682862/Croma%20Assets/CMS/Category%20Page%20Banners/Televisions%20and%20Accessories/C997/CP_OnePlus-TV_24Feb2022_rtminq.jpg/mxw_2048,f_auto"
@@ -87,6 +87,11 @@ document.querySelector(".butt").addEventListener("click", function() {
 
 function validate(usd, mo) {
     var a = 0;
+    var y=usd||[]
+    if(y.length==null ||y.length==[]){
+        alert("Invalid details --Please create account")
+    }
+    else{
     for (var i = 0; i < usd.length; i++) {
         console.log("ssd", mo)
         console.log("ss", usd[i].moboleno)
@@ -101,4 +106,5 @@ function validate(usd, mo) {
     } else {
         alert("Invalid details --Please create account")
     }
+}
 }

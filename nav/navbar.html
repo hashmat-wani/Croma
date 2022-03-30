@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navstyle.css" />
+    <script src="https://kit.fontawesome.com/7213b39e3a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav></nav>
+
+    <script type="module">
+        import nav from "./nav.js"; document.querySelector("nav").innerHTML = nav();
+        let menu = document.querySelector(".menu");
+        let dropdownleft = document.querySelector(".dropdownleft"); menu.onclick = () => {
+            if (dropdownleft.style.display == "none") { //
+                userdropdown.style.display = "none"; dropdownleft.style.display = "block";
+            } else dropdownleft.style.display = "none";
+        }; let leftdivs = document.querySelectorAll(".dropdownleft>div"); let rightdivs = document.querySelectorAll(".dropdownright>div");
+        for (let i = 0; i
+            < leftdivs.length; i++) { leftdivs[i].addEventListener("mouseover", () => { rightdivs[i].style.display = "flex"; }); leftdivs[i].addEventListener("mouseout", () => { rightdivs[i].style.display = "none"; }); } let user = document.querySelector(".user"); let userdropdown = document.querySelector(".userdropdown"); user.onclick
+                = () => { if (userdropdown.style.display == "none") { dropdownleft.style.display = "none"; userdropdown.style.display = "block"; } else userdropdown.style.display = "none"; };
+    </script>
+</body>
+
+</html>
