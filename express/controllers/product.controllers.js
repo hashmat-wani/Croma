@@ -1,8 +1,14 @@
 const express =require("express")
+const cors = require('cors')
 
 const Router =express.Router()
 
 const Product =require("../models/product.models");
+
+
+
+ 
+Router.use(cors())
 
 
 Router.post("/",async(req,res)=>{
