@@ -163,8 +163,8 @@ for (let i = 0; i <
     leftdivs[i].addEventListener("mouseover", () => { rightdivs[i].style.display = "flex"; });
     leftdivs[i].addEventListener("mouseout", () => { rightdivs[i].style.display = "none"; });
 }
-let user = document.querySelector(".user");
-let userdropdown = document.querySelector(".userdropdown");
+ let user = document.querySelector(".user");
+ let userdropdown = document.querySelector(".userdropdown");
 user.onclick = () => {
     if (userdropdown.style.display == "none") {
         dropdownleft.style.display = "none";

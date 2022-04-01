@@ -17,4 +17,15 @@ Router.post("/",async(req,res)=>{
     }
 })
 
+Router.get("/",async(req,res)=>{
+  
+    try {
+        const profile = await Userprofile.find();
+        res.status(200).send(profile)  
+        console.log(req.body)  
+    } catch (error) {
+        res.status(500).send({message:error.message})
+    }
+})
+
 module.exports=Router
