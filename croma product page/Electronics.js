@@ -47,14 +47,7 @@ for (let i = 0; i < leftdivs.length; i++) {
     });
 }
 
-let user = document.querySelector(".user");
-let userdropdown = document.querySelector(".userdropdown");
-user.onclick = () => {
-    if (userdropdown.style.display == "none") {
-        dropdownleft.style.display = "none";
-        // userdropdown.style.display = "block";
-    } else userdropdown.style.display = "none";
-};
+
 
 /////appliying login functionlity for the page
 
