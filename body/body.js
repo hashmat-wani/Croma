@@ -76,35 +76,77 @@ document.querySelector(".user").addEventListener("click", function() {
 var userprofiledada = JSON.parse(localStorage.getItem("userprofiledata"))
     //console.log(userprofiledada)
 
-document.querySelector(".butt").addEventListener("click", function() {
+// document.querySelector(".butt").addEventListener("click", function() {
+//     var mobno = document.getElementById("mobileno").value;
+//     var strno = mobno.toString()
+//     console.log(strno)
+
+
+//     validate(userprofiledada, strno);
+// })
+
+// function validate(usd, mo) {
+//     var a = 0;
+//     var y=usd||[]
+//     if(y.length==null ||y.length==[]){
+//         alert("Invalid details --Please create account")
+//     }
+//     else{
+//     for (var i = 0; i < usd.length; i++) {
+//         console.log("ssd", mo)
+//         console.log("ss", usd[i].moboleno)
+//         if (usd[i].moboleno == mo) {
+//             a++;
+//         }
+//     }
+
+//     if (a >= 1) {
+//         alert("login successful")
+//         window.location.href = "profile.html";
+//     } else {
+//         alert("Invalid details --Please create account")
+//     }
+// }
+// }
+
+document.querySelector(".butt").addEventListener("click", function () { 
     var mobno = document.getElementById("mobileno").value;
-    var strno = mobno.toString()
-    console.log(strno)
-
-
-    validate(userprofiledada, strno);
+     var strno = mobno.toString()
+ console.log("eee")
+ console.log(true)
+//  getprofiledata()
+  //.......................
+ async function getprofiledata() {
+let res = await fetch("http://localhost:5501/profile")
+let data = await res.json();
+console.log("userdata", data)
+validate(data, strno); 
+ }
+ getprofiledata()
+ //..................................
+//  validate(userprofiledada, strno); 
 })
-
+// getprofiledata()
 function validate(usd, mo) {
-    var a = 0;
-    var y=usd||[]
-    if(y.length==null ||y.length==[]){
-        alert("Invalid details --Please create account")
+var a = 0;
+var y=usd||[]
+if(y.length==null ||y.length==[]){
+    alert("Invalid details --Please create account")
+}
+else{
+for (var i = 0; i < usd.length; i++) {
+   // console.log("ssd", mo)
+   // console.log("ss", usd[i].moboleno)
+    if (usd[i].mobileno == mo) {
+        a++;
     }
-    else{
-    for (var i = 0; i < usd.length; i++) {
-        console.log("ssd", mo)
-        console.log("ss", usd[i].moboleno)
-        if (usd[i].moboleno == mo) {
-            a++;
-        }
-    }
+}
 
-    if (a >= 1) {
-        alert("login successful")
-        window.location.href = "profile.html";
-    } else {
-        alert("Invalid details --Please create account")
-    }
+if (a >= 1) {
+    alert("login successful")
+    window.location.href = "./index.html";
+} else {
+    alert("Invalid details --Please create account")
+}
 }
 }

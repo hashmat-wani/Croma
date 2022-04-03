@@ -22,8 +22,10 @@ function logindata() {
 
     <div class="dont">
         <h4>Don't have an account? </h4>
-        <a href="../login_signup/profile.html">Create now</a>
+        <a href="../login_signup/profile.html">Create now</a> 
     `;
+    
+    
 }
 
 export default logindata;

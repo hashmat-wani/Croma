@@ -1,12 +1,14 @@
 
 var data;
 async function getMovies() {
+var data;
+async function getproduct() {
     let res = await fetch("http://localhost:5501/product")
      data = await res.json();
     console.log("dproduct", data)
     displayData(data)
 }
-getMovies()
+getproduct()
 
 
 // /Adding the script tag

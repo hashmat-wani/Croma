@@ -4,16 +4,17 @@ const mongoose = require("mongoose")
 const app =express();
 
 const productcontroller =require("./controllers/product.controllers");
-const cartcontroller =require("./controllers/cart.controller")
+const cartcontroller =require("./controllers/cart.controller");
+const userprofilecontroller =require("./controllers/userprofile.controller")
 
 app.use(express.json());
  
 const connect =require("./config/db")
 
 
-app.use("/product",productcontroller)
-app.use("/cart",cartcontroller)
-
+app.use("/product",productcontroller);
+app.use("/cart",cartcontroller);
+app.use("/profile",userprofilecontroller);
 
 
 
